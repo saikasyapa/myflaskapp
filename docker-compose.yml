@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  flaskapp:
+    build: .
+    container_name: myflaskapp_container
+    ports:
+      - "5000:5000"
+    restart: always
